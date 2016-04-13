@@ -1,0 +1,102 @@
+/*相对定位*/
+/*.box-set {
+  background: #e8eae9;
+}
+.box-1,.box-2,.box-3 {
+  background: #8ec63f;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+.box-1 {
+    top: 20px;
+}
+.box-2 {
+  left: 40px;
+}
+.box-3 {
+  bottom: -10px;
+  right: 20px;
+}*/
+/*绝对定位*/
+/*.box-set {
+  background: #e8eae9;
+  height: 200px;
+  position: relative;
+}
+.box-1,.box-2,.box-3 {
+  background: #8ec63f;
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+.box-1 {
+  top: 6%;
+  left: 2%;
+}
+.box-2 {
+  top: 0;
+  right: -40px;
+}
+.box-3 {
+  bottom: -10px;
+  right: 20px;
+}
+.box-4 {
+  bottom: 0;
+}*/
+/*flex定位*/
+/*.box-1,.box-2,.box-3 {
+  background: #8ec63f;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+}
+.box-1 {
+  top: 6%;
+  left: 2%;
+}
+.box-2 {
+  top: 0;
+  right: -40px;
+}
+.box-3 {
+  bottom: -10px;
+  right: 20px;
+}
+.box-4 {
+  bottom: 0;
+} 
+*/
+/*z-index属性*/
+.box-set {
+  background: #e8eae9;
+  height: 160px;
+  position: relative;
+}
+.box-1,.box-2,.box-3 {
+  width: 80px;
+  height: 80px;
+  background: #8ec63f;
+  border: 3px solid #f7941d;
+  position: absolute;
+}
+.box-1 {
+  left: 10px;
+  top: 10px;
+}
+.box-2 {
+  bottom: 10px;
+  left: 70px;
+  z-index: 3;
+}
+.box-3 {
+  left: 130px;
+  top: 10px;
+  z-index: 2;
+}
+.box-4 {
+  bottom: 10px;
+  left: 190px;
+  z-index: 1;
+}

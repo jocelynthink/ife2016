@@ -1,0 +1,107 @@
+/*方法一：绝对定位相对定位*/
+/*该方法有缺点，就是父元素的高度要给定，不能自适应高度*/
+/**{
+	margin: 0 auto;
+}
+.content{
+	margin: 20px;
+	height: 500px;
+	background: #eee;
+	position: relative;
+	padding:20px;
+}
+img{
+	width: 80px;
+	height: 80px;
+}
+.left-area{
+	position: absolute;
+	width: 200px;
+	border: #999 solid;
+	padding: 20px;
+}
+.teamname{
+	position: absolute;
+    top: 20px;
+    left: 120px;
+}
+.mid-area{
+	position: absolute;
+	margin: 0 20px;
+	border: #999 solid;
+	left:260px;
+	right:140px;
+	padding: 20px;
+	line-height: 2em;
+}
+.right-area{
+	right: 20px;
+	width: 120px;
+	position: absolute;
+	border:#999 solid;
+}
+.team_num{
+	width: 80px;
+	height: 80px;
+	margin:20px;
+}*/
+
+
+/*三栏布局，采用float实现*/
+/*思路：左中右三个栏，在HTML中的排放顺序是左右中*/
+/*浮动左和右元素，margin适当的距离*/
+/*中间元素是文档流元素，直接margin适当的距离，放在适当的位置*/
+/*由于父元素是根据文档流中的元素确定大小的，也就是中间元素的大小决定位置*/
+/*所以要清除浮动*/
+/*方法一：设置父元素的overflow属性:为auto*/
+/*方法二：给父元素添加一个伪类，然后添加一个空元素，并且对空元素清除浮动*/
+*{
+	margin: 0 auto;
+}
+.content{
+	margin: 20px;
+	height: 100%;
+	background: #eee;
+	padding:20px;
+	border: #999 solid;
+	overflow: auto; //方法一：设置父元素
+}
+
+.left-area{
+	width: 200px;
+	border: #999 solid;
+	padding: 20px;
+	float: left;
+}
+img{
+	width: 80px;
+	height: 80px;
+}
+.mid-area{
+	margin-left: 280px;
+	margin-right:  160px;
+	border: #999 solid;
+	padding: 20px;
+	line-height: 2em;
+
+}
+.right-area{
+	margin-right: 20px;
+	float: right;
+	width: 120px;
+	border:#999 solid;
+}
+.team_num{
+	width: 80px;
+	height: 80px;
+	margin:20px;
+}
+/*给父元素添加一个伪类*/
+/*.clearfix:after{
+	clear:both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	content:"";
+}*/

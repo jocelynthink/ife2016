@@ -1,0 +1,177 @@
+*{
+	margin:0;
+	font-family: "黑体";
+  	/*font-size: 14px;*/
+}
+/*导航部分*/
+.nav-area{
+	width: 100%;
+	height: 70px;
+	background: black;
+	position: relative;
+}
+.nav-area .logo{
+	position: absolute;
+	left: 40px;
+	top:20px;
+}
+nav ul{
+  float: right;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li{
+  line-height: 70px;
+  float: left;
+  margin-right: 20px;
+}
+nav ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color:gray;
+}
+/*中间部分*/
+.center{
+	background: #eee;
+	overflow: auto;
+	padding: 20px;
+}
+
+.content{
+	margin-right: 440px;
+	background: white;
+	padding: 20px;
+	line-height: 2;
+	margin-bottom:20px;
+	overflow: auto;
+	box-shadow: 2px 2px 2px #848484;
+}
+.content .text-indent{
+	text-indent: 2em;
+	/*line-height: 1.5;*/
+}
+.content ul{
+	list-style: none;
+	margin-left: -10px;
+}
+.content .mypic img{
+	width: 100px;
+	height: 80px;
+}
+
+.color_gray{
+	color:gray;
+}
+
+.mypic{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: 1px solid black;
+	padding: 10px 20px 25px 20px;
+	text-align: center;
+}
+.picture img{
+ 	width: 80px;
+ 	height: 80px;
+ }
+/*表格布局*/
+table{
+  width: 100%;
+  margin: 0 auto;
+  border-color: #ccc;
+  border-collapse:collapse;
+}
+thead{
+	background: black;
+	text-align: left;
+	color:white;
+}
+tfoot{
+	background: #eee;
+}
+/*左边部分*/
+.left-area{
+	width: 380px;
+	padding: 20px;
+	background: white;
+	float: right;
+	right: 20px;
+	box-shadow: 2px 2px 2px #848484;
+}
+.aside{
+  padding-left: 10px;
+  border-left: 3px #ccc solid;
+}
+
+form{
+  width: 100%;
+  min-width: 300px;
+}
+form>div{
+  margin: 10px 0;
+}
+tfoot{
+  font-weight: bold;
+}
+ol>li{
+  font-weight: bold;
+}
+.bot{
+  vertical-align: bottom;
+}
+.input_message{
+  width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  vertical-align: top;
+  margin-bottom: 0px;
+}
+.input_messages{
+  width: 30%;
+  text-align: right;
+  display:inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.demand{
+  font-size: 13px;
+  color: gray;
+  margin-left: 37.5%;
+  margin-top: 10px;
+}
+
+textarea{
+  margin-top: 10px;
+  width: 50%;
+  height: 100px;
+  margin-left: -7px;
+}
+input[type='submit']{
+  width: 100%;
+  height: 40px;
+  background: #3355D0;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+  border:1px solid #3355D0;
+  font-size:20px;
+}
+/*底部部分*/
+footer{
+	background: black;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	padding-top:20px;
+}
